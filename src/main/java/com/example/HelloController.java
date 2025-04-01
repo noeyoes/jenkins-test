@@ -6,11 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/hello")
 public class HelloController {
-    @GetMapping
+    @GetMapping("/hello")
     public String sayHello() {
         System.out.println("hello!!");
         return "Hello World!";
+    }
+
+    @GetMapping("/bye")
+    public String sayBye() {
+        System.out.println("Bye!!!");
+        return "Bye...";
     }
 }
