@@ -13,10 +13,4 @@ public class HelloController {
         System.out.println("hello!!");
         return "Hello World!";
     }
-
-    @GetMapping
-    public String sayTest() {
-        System.out.println("test...");
-        return "Test....";
-    }
 }
