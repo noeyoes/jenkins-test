@@ -19,4 +19,10 @@ public class HelloController {
         System.out.println("Bye!!!");
         return "Bye...!";
     }
+
+    @GetMapping("/hi")
+    public String sayHi() {
+        System.out.println("Hi!!");
+        return "Hi!!!!!!";
+    }
 }
